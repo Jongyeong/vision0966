@@ -11,3 +11,10 @@ handlers:
 libraries:
 - name: webapp2
   version: "2.5.2"
+- name : discovery
+  version : "latest:
+- name : googleapiclient
+	version : "latest"
+- name : auth2client.client
+	version : "latest"
+  
