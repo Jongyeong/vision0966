@@ -30,11 +30,11 @@ def main(photo_file):
             }]
         })
         response = service_request.execute()
-        for i 0:10      
+        for i in range(10) :      
             logo = response['responses'][0]['logoAnnotations'][i]['description']
-            if logo != null
+            if logo != null :
                 print('Found Logo: %s for %s' % (logo, photo_file))
-            else continue       
+            else : continue       
         return 0
 
 if __name__ == '__main__':
