@@ -13,4 +13,5 @@ libraries:
   version: "2.5.2"
 - name : discovery
   version : "latest:
-- name : google  
+- name : googleapiclient
+	ver
