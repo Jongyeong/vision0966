@@ -16,4 +16,4 @@ libraries:
 - name : googleapiclient
 	version : "latest"
 - name : auth2client.client
-	version 
+	version : "latest
