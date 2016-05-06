@@ -15,4 +15,4 @@ libraries:
   version : "latest:
 - name : googleapiclient
 	version : "latest"
-- name : auth
+- name : auth2client.cle
