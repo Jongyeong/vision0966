@@ -12,9 +12,7 @@ DISCOVERY_URL='https://{api}.googleapis.com/$discovery/rest?version={apiVersion}
 def main(photo_file):
     """Run a label request on a single image"""
 
-    credentials = GoogleCredentials.get_application_default()
-    service = discovery.build('vision', 'v1', credentials=credentials,
-                              discoveryServiceUrl=DISCOVERY_URL)
+    service = discovery.build('vision', 'v1', developerKey='AIzaSyBRfze9MmgvJsYaaa99dUSbathSpJFvQCI')
 
     with open(photo_file, 'rb') as image:
         image_content = base64.b64encode(image.read())
