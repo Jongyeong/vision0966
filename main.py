@@ -2,7 +2,7 @@ import argparse
 import base64
 import httplib2
 
-from googleapiclient import discovery
+import discovery
 from oauth2client.client import GoogleCredentials
 
 # The url template to retrieve the discovery document for trusted testers.
