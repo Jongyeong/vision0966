@@ -68,7 +68,7 @@ def main(gcs_uri):
         raise Exception('Image uri must be of the form gs://bucket')
     g_url = [gcs_uri+'/'+str(i)+'.jpg' for i in range(1, 8)]
     for gcs_url in g_url:
-      	print len(g_url
+      	print len(g_url)
         annotations = identify_logo(gcs_url)
         if not annotations:
             print('No Logo identified')
