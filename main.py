@@ -22,7 +22,7 @@ import base64
 import json
 import sys
 
-from ㅣㅑㅠ.googleapiclient import discovery
+from lib.googleapiclient import discovery
 import httplib2
 from oauth2client.client import GoogleCredentials
 
