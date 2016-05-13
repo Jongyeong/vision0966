@@ -21,8 +21,8 @@ import time
 import base64
 import json
 import sys
-
-from lib.googleapiclient import discovery
+sys.path.insert(0, '/libr')
+from googleapiclient import discovery
 import httplib2
 from oauth2client.client import GoogleCredentials
 
