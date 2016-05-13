@@ -36,7 +36,7 @@ def get_vision_service():
 
 
 # [START identify_landmark]
-def identify_landmark(gcs_uri, max_results=4):
+def identify_logo(gcs_uri, max_results=10):
     """Uses the Vision API to identify the landmark in the given image.
     Args:
         gcs_uri: A uri of the form: gs://bucket/object
@@ -50,7 +50,7 @@ def identify_landmark(gcs_uri, max_results=4):
             }
         },
         'features': [{
-            'type': 'LANDMARK_DETECTION',
+            'type': 'LOGO_DETECTION',
             'maxResults': max_results,
             }]
         }]
@@ -61,7 +61,7 @@ def identify_landmark(gcs_uri, max_results=4):
         })
     response = request.execute()
 
-    return response['responses'][0].get('landmarkAnnotations', None)
+    return response['responses'][0].get('logoAnnotations', None)
 # [END identify_landmark]
 
 
@@ -69,9 +69,9 @@ def identify_landmark(gcs_uri, max_results=4):
 def main(gcs_uri):
     if gcs_uri[:5] != 'gs://':
         raise Exception('Image uri must be of the form gs://bucket/object')
-    annotations = identify_landmark(gcs_uri)
+    annotations = identify_logo(gcs_uri)
     if not annotations:
-        print('No landmark identified')
+        print('No Logo identified')
     else:
         print('\n'.join(a['description'] for a in annotations))
 # [END main]
@@ -79,7 +79,7 @@ def main(gcs_uri):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='Identifies the landmark in the given image.')
+        description='Identifies the Logo in the given image.')
     parser.add_argument(
         'gcs_uri', help=('The Google Cloud Storage uri to the image to identify'
                          ', of the form: gs://bucket_name/object_name.jpg'))
