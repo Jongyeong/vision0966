@@ -21,7 +21,6 @@ import time
 import base64
 import json
 import sys
-import sys
 sys.path.insert(0, '/path/to/application/app/folder')
 from googleapiclient import discovery
 import httplib2
