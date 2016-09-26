@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Now Processing</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+
+    <script>
+    var procCnt = 0;
+    var cnt = {{ max_length }};
+    var url = "http://vision0966.appspot.com/final/" +"{{ keyword }}";
+
+    {% for temp in text %}
+            //console.log("start {{ temp }}");
+        var req = $.ajax({
+            type: "POST",
+            url: "http://vision0966.appspot.com/vision",
+            data : {url: "{{ temp }}" }
+        });
+        req.success(function (data) {
+            procCnt++;
+            $("#result").text(procCnt + " / " + cnt);
+            if(procCnt >= cnt) {
+                $(location).attr('href', url);
+            }
+        });
+        req.fail(function () {
+            procCnt++;
+            if(procCnt >= cnt) {
+                $(location).attr('href', url);
+            }
+        });
+    {% endfor %}
+
+    /*
+        $.post("http://vision0966.appspot.com/final", function (data) {
+            $("#chart").html(data);
+        });
+        */
+    </script>
+</head>
+<body>
+    Processing :
+<div id="result" name="result">
+</div>
+</form>
+</body>
+</html>

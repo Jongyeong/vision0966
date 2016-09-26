@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vision0966</title>
+</head>
+<body>
+<fieldset>
+        <legend>
+            How to use
+        </legend>
+     <p>
+        Word : Analyze photos from twits which contain specific "word". <br>
+        ID   : Analyze photos twitted by that person(ID). <br>
+        Results will be Pie Chart made by Pygal.
+            </p>
+</fieldset>
+ <fieldset>
+     <legend>
+         Word Search
+     </legend>
+    <form action="/word" method="post"><p>
+    Word:
+        <input type="text" name="word" />
+        <input type="submit" value="search" />
+        </p>
+
+    </form>
+ </fieldset>
+  <fieldset>
+    <legend>
+         User Search
+     </legend>
+    <form action="/user" method="post"><p>
+        ID:
+        <input type="text" name="user" />
+    <input type="submit" value="search" /></p>
+    </form>
+
+ </fieldset>
+<fieldset>
+    <legend>
+        About
+    </legend>
+        <p>Using Google Cloud Platform, App engine (Using PyCharm) and based on Flask<br>
+        Because it uses server of Google, it is possible to access from other computers. <br>
+        Also, it looks like doing well only in "Chrome" (only english)
+            </p>
+        In processing, there are 'A / B', A means # of success of analyzing requested pictures.
+        So, it does not count when request is fail.(not accepted) <br> It works well. But, if there are a lot of twits, it might result in errors because it takes more than 60 seconds. <br>
+        <p>In case of Google App Engine, it is possible to handle same request at the same time in different server, I use memcache to save the result instead of DB.<br>
+            * Google cloud system offers memcache.
+        </p>
+    </fieldset>
+</body>
+</html>
