@@ -3,13 +3,13 @@
 Korea univ. EE 2014170966   July/2016
 for ENGINEERING DESIGN Ⅰ -software course. 
 
-  # Introduction
+  # Introduction <br>
   If we input 'word' or 'ID', this code will collect pictures from twitter and analyze which brands appear in them.
   Actually, at first time, I want to use 'Instagram', however, I cannot get permission to use Instagram code.
   So, pictures are based on twitter. It means lack of accuracy.
   If possible, I think it is more accurate to use pictures from Instgram.
   
-  # How to use 
+  # How to use <br>
   Word : Analyze photos from twits which contain specific "word".
   ID   : Analyze photos twitted by that person(ID).
   Results will be Pie Chart made by Pygal.
@@ -26,7 +26,7 @@ for ENGINEERING DESIGN Ⅰ -software course.
   Google cloud system offers memcache.
   
   
-  # Used things.
+  # Used things.<br>
   Python27(Pycharm), Flask, Google Cloud vision, Google Cloud Platform, Twitter, jQuery
     
     
