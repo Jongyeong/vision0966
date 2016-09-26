@@ -21,7 +21,7 @@ app = Flask(__name__)
 DISCOVERY_URL = 'https://{api}.googleapis.com/$discovery/rest?version={apiVersion}'
 
 
-# for twitter
+# for twitter  / uses yours.
 access_token = ""
 access_token_secret = ""
 consumer_key = ""
