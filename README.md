@@ -1,6 +1,6 @@
 # vision0966
 
-Korea univ. EE 2014170966   July/2016
+Jongyeong LEE 2014170966 EE, Korea University
 for ENGINEERING DESIGN Ⅰ -software course. 
 
   # Introduction <br>
