@@ -26,10 +26,10 @@ for ENGINEERING DESIGN Ⅰ -software course.
   Google cloud system offers memcache.<br>
   
   
-  # Used things.<br>
+  # I Used - <br>
   Python27(Pycharm), Flask, Google Cloud vision, Google Cloud Platform, Twitter, jQuery <br>
-  And several lib. <br> 
+  And several lib including Pygal <br> 
   
-  <b> All html files have to be in 'templates' folder which locates same folder of main code.</b>
+  <b> All html files have to be in 'templates' folder which locates same folder of main code. </b>
     
     
