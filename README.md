@@ -1,7 +1,7 @@
 # vision0966
 
-Jongyeong LEE 2014170966 EE, Korea University
-for ENGINEERING DESIGN Ⅰ -software course. 
+Jongyeong LEE 2014170966 EE, Korea University for ENGINEERING DESIGN Ⅰ -software course. <br>
+It was completed at July, 2016.
 
   # Introduction <br>
   If we input 'word' or 'ID', this code will collect pictures from twitter and analyze which brands appear in them.<br>
