@@ -20,10 +20,11 @@ It was completed at July, 2016.
   Also, it looks like doing well only in "Chrome" (only english)<br>
   In processing, there are 'A / B', A means # of success of analyzing requested pictures.<br>
   So, it does not count when request is fail.(not accepted)<br>
-  It works well. But, if there are a lot of twits, it might result in errors because it takes more than 60 seconds.<br>
-  In case of Google App Engine, it is possible to handle same request at the same time in different server, I use memcache to save the     result instead of DB.<br>
-           
-  Google cloud system offers memcache.<br>
+  It works well. But, if there are a lot of twits, it might make errors because it takes more than 60 seconds.<br>
+  In case of Google App Engine, it is possible to handle same request at the same time in different server. <br>
+  It means that different servers save only their 'own' results. To deal with this problem, there might be two simple ways. <br> 
+  One is using Data Base(DB), and the other is using memcahce provided by Google Cloud Platform.<br>
+  I use that memcache to save the overall results instead of using DB.<br>
   
   
   # I Used - <br>
